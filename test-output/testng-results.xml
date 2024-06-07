@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-02T19:26:36 IST" name="OrangeHRM Test Suite" finished-at="2024-06-02T19:26:36 IST" duration-ms="30">
+    <groups>
+    </groups>
+    <test started-at="2024-06-02T19:26:36 IST" name="Smoke Test Cases" finished-at="2024-06-02T19:26:36 IST" duration-ms="30">
+    </test> <!-- Smoke Test Cases -->
+  </suite> <!-- OrangeHRM Test Suite -->
+</testng-results>

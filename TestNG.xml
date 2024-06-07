@@ -1,0 +1,72 @@
+<suite name="OrangeHRM Test Suite">
+	
+	
+	
+	
+<parameter name="browser name" value="Chrome"/>
+<parameter name="UserName" value="Admin"/>
+<parameter name="Password" value="admin123"/>
+<parameter name="Invalid password"  value="nikku"/>
+
+	<test name="Smoke Test Cases">
+         
+       <groups>
+		
+			
+			<define name="Daily Build">
+		    
+		    <exclude name="Regression"/>
+			
+		    <include name="Smoke"/>
+            
+			</define>
+			
+			<define name="Weekly Build">
+			
+			<include name="Smoke"/>
+			<include name="Functional"/>
+			<include name="Regression"/>
+			
+				
+			</define>
+			 <run>
+				
+				<include name="Daily Build"/>
+				 
+				 
+			 </run>
+			
+		
+		
+	    </groups>
+	
+		<classes>
+             
+            <class name="OrangeHRM_Project.LeaveModule"/>
+			<class name="OrangeHRM_Project.RecruitmentModule"/>
+			<class name="OrangeHRM_Project.OrganizationModule"/>
+			
+
+		</classes>
+
+
+	</test>
+
+	<test name="Regression Tests" enabled="false">
+
+		<classes>
+
+			<class name="OrangeHRM_Project.Login_Test" />
+
+			<class name="OrangeHRM_Project.Admin_Module" />
+
+			
+
+
+		</classes>
+
+
+	</test>
+
+
+</suite>

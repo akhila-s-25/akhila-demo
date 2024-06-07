@@ -1,0 +1,29 @@
+<suite name="OrangeHRM Test Suite">
+	
+	<test name="Test Case 1">
+         <groups>
+		   
+		   <dependencies>
+			 
+			 <group name="Sanity" depends-on="Smoke"/>  
+			 
+			 <group name="Regression"  depends-on="Sanity"/>
+			   
+		   </dependencies>
+			 
+		 </groups>
+       
+		<classes>
+             
+             <class name="OrangeHRM_Project.Groupdependency"/>
+				 
+		
+            
+			
+
+		</classes>
+
+
+	</test>
+
+</suite>
